@@ -1,87 +1,127 @@
 # 自动静音 · Auto Mute
 
-让 Mac 在合盖和开盖唤醒时自动保持安静，只对 Mac 的**内置扬声器**生效。
+[简体中文](#简体中文) | [English](#english)
 
-Keeps your Mac quiet when you close and reopen the lid. Automatic muting applies only to the Mac’s **built-in speakers**.
+## 简体中文
 
-## 安装 · Install
+自动静音是一个 macOS 菜单栏小工具，在合盖睡眠前和开盖唤醒后自动静音 **Mac 内置扬声器**。解锁后不会自动恢复音量，由你手动决定何时开启声音。
 
-1. 双击打开 `自动静音.dmg`。
+### 功能特色
+
+- **双重静音保护**：系统即将睡眠时静音，唤醒后再次静音并短暂重试。
+- **只控制内置扬声器**：耳机、AirPods、蓝牙设备和 USB 音箱不受影响。
+- **不自动恢复声音**：解锁后继续保持静音，直到你手动解除。
+- **切回扬声器时保护**：开启“唤醒时自动静音”后，输出设备切换回内置扬声器时也会执行静音。
+- **菜单栏常驻**：通过扬声器图标快速操作，不占用 Dock 位置。
+- **登录时自动运行**：登录 Mac 后自动在后台运行。
+- **按需设置**：合盖静音、唤醒静音和登录时自动运行均可单独开关。
+
+### 安装
+
+1. 获取 `自动静音.dmg` 安装包，双击打开。
 2. 将“自动静音”图标拖到“应用程序”文件夹。
 3. 打开“应用程序”文件夹，双击“自动静音”。
-4. 如果 macOS 询问是否打开，请点击“打开”。
+4. 启动后，在屏幕顶部菜单栏找到扬声器图标。
 
-1. Double-click `自动静音.dmg`.
-2. Drag the “自动静音” icon to the Applications folder.
+### 首次设置
+
+点击菜单栏中的扬声器图标，确认“合盖时自动静音”和“唤醒时自动静音”已开启。
+
+如希望应用在每次登录 Mac 后自动运行，请开启“登录时自动运行”。若系统提示需要允许登录项，请前往 **系统设置 → 通用 → 登录项**，按提示允许“自动静音”运行。
+
+“登录时自动运行”指完成用户登录后启动应用。平时合盖睡眠时，已经运行的应用会继续在下一次唤醒时发挥作用。
+
+### 日常使用
+
+通常无需额外操作：
+
+> 合盖进入睡眠 → 尝试静音 → 开盖唤醒 → 再次静音 → 解锁后仍保持静音 → 手动开启声音
+
+需要声音时，可以使用系统音量控制，或在菜单栏中选择“解除静音”。应用的手动静音和解除静音操作仅在当前输出为内置扬声器时生效。
+
+菜单栏还提供以下选项：
+
+| 选项 | 作用 |
+| --- | --- |
+| 立即静音 / 解除静音 | 手动控制内置扬声器 |
+| 合盖时自动静音 | 在系统即将进入睡眠时执行静音 |
+| 唤醒时自动静音 | 唤醒后执行静音，并在切回内置扬声器时静音 |
+| 登录时自动运行 | 登录 Mac 后自动启动应用 |
+| 设置… | 查看当前输出设备和状态，调整开关 |
+| 退出 | 关闭应用，停止后续自动静音 |
+
+### 卸载
+
+1. 在菜单栏中关闭“登录时自动运行”。
+2. 选择“退出”。
+3. 在“应用程序”文件夹中，将“自动静音”移到废纸篓。
+
+### 使用说明
+
+- 应用需要保持运行才能自动静音，退出后不会继续处理睡眠和唤醒事件。
+- “合盖静音”通过系统睡眠事件触发；若合盖后 Mac 仍在运行，例如使用外接显示器的合盖模式，这一步可能不会触发。
+- 自动静音依赖系统通知和音频设备响应，无法保证所有设备和情况下都完全没有瞬间声音。
+- 应用不会关闭彻底关机后的系统启动音；如有需要，请在 macOS“声音”设置中关闭“开机时播放声音”。
+
+---
+
+## English
+
+Auto Mute is a macOS menu bar utility that automatically mutes your Mac’s **built-in speakers** before sleep and after wake. It does not restore sound when you unlock your Mac—you decide when to unmute.
+
+### Features
+
+- **Two opportunities to mute**: mutes before system sleep and again after wake, with brief retries.
+- **Built-in speakers only**: leaves headphones, AirPods, Bluetooth devices, and USB speakers unchanged.
+- **No automatic unmuting**: keeps the speakers muted after unlock until you manually unmute.
+- **Protection when switching back**: with wake muting enabled, also mutes when the output switches back to the built-in speakers.
+- **Menu bar access**: quick controls from a speaker icon, without a Dock icon.
+- **Launch at login**: runs automatically in the background after you sign in.
+- **Separate controls**: configure sleep muting, wake muting, and launch at login independently.
+
+### Installation
+
+1. Get the `自动静音.dmg` installer and double-click it.
+2. Drag “自动静音” to the Applications folder.
 3. Open Applications and double-click “自动静音”.
-4. If macOS asks whether you want to open it, click “Open”.
+4. Find the speaker icon in the menu bar at the top of your screen.
 
-## 首次设置 · First-time Setup
+### First-time Setup
 
-应用启动后会出现在菜单栏中，图标是扬声器图案。
+Click the speaker icon and check that “合盖时自动静音” (mute before sleep) and “唤醒时自动静音” (mute after wake) are enabled.
 
-After launching, the app appears in the menu bar with a speaker icon.
+To start the app each time you sign in, enable “登录时自动运行” (launch at login). If macOS asks for login item approval, go to **System Settings → General → Login Items** and follow the prompt to allow “自动静音”.
 
-如果系统提示允许登录项，请打开：
+Launch at login starts the app after you sign in to your user account. During everyday lid-close sleep, an already-running app resumes its work when the Mac wakes.
 
-If macOS asks for permission for a login item, open:
+### Everyday Use
 
-**系统设置 → 通用 → 登录项**
+Usually, no extra action is needed:
 
-**System Settings → General → Login Items**
+> Close the lid for sleep → attempt to mute → reopen and wake → mute again → stay muted after unlock → manually turn sound on
 
-找到“自动静音”，打开允许它在登录时运行的开关。这样每次登录 Mac 后，应用都会自动在后台运行。
+When you want sound, use the system volume controls or choose “解除静音” (unmute) from the menu bar. The app’s manual mute and unmute controls work only when the current output is the built-in speakers.
 
-Find “自动静音” and turn on the option that allows it to run at login. The app will then run automatically in the background after you sign in to your Mac.
+The app currently uses Chinese interface labels:
 
-## 使用 · Use
+| Menu option | What it does |
+| --- | --- |
+| 立即静音 / 解除静音 | Mute / unmute the built-in speakers manually |
+| 合盖时自动静音 | Mute before the system goes to sleep |
+| 唤醒时自动静音 | Mute after wake and when switching back to the built-in speakers |
+| 登录时自动运行 | Launch automatically after sign-in |
+| 设置… | View the current output device and status, and adjust settings |
+| 退出 | Quit the app and stop future automatic muting |
 
-应用默认会执行以下操作：
+### Uninstallation
 
-By default, the app does the following:
+1. Disable “登录时自动运行” (launch at login) in the menu bar.
+2. Choose “退出” (quit).
+3. Move “自动静音” from Applications to the Trash.
 
-- 合盖前静音内置扬声器；
-- 开盖唤醒后再次静音；
-- 锁屏和解锁后继续保持静音；
-- 耳机、AirPods、蓝牙设备和 USB 音箱不受影响；
-- 只有你手动解除静音后，内置扬声器才会恢复声音。
+### Notes
 
-- Mutes the built-in speakers before sleep;
-- Mutes them again after wake;
-- Keeps them muted through lock and unlock;
-- Leaves headphones, AirPods, Bluetooth devices, and USB speakers unchanged;
-- Restores sound only when you manually unmute.
-
-点击菜单栏中的扬声器图标，可以：
-
-Click the speaker icon in the menu bar to:
-
-- 立即静音或解除静音；
-- 开启或关闭合盖自动静音；
-- 开启或关闭唤醒自动静音；
-- 开启或关闭登录时自动运行；
-- 打开设置窗口。
-
-- Mute or unmute immediately;
-- Enable or disable muting before sleep;
-- Enable or disable muting after wake;
-- Enable or disable launching at login;
-- Open Settings.
-
-## 卸载 · Uninstall
-
-1. 先退出菜单栏中的“自动静音”。
-2. 打开“应用程序”文件夹。
-3. 将“自动静音”移到废纸篓。
-4. 如果之前开启了登录时自动运行，请在“系统设置 → 通用 → 登录项”中关闭并移除它。
-
-1. Quit “自动静音” from the menu bar.
-2. Open the Applications folder.
-3. Move “自动静音” to the Trash.
-4. If launch at login was enabled, disable and remove it in System Settings → General → Login Items.
-
-## 说明 · Note
-
-本应用用于合盖睡眠和开盖唤醒场景。彻底关机后按下电源键时的系统启动音，需要在 macOS 的“声音”设置中关闭“开机时播放声音”。
-
-This app is designed for sleep and wake when closing and reopening the lid. To disable the sound that may play after a full shutdown, turn off **Play sound on startup** in macOS Sound settings.
+- The app must be running to mute automatically. Once you quit it, sleep and wake events are no longer handled.
+- Lid-close muting is triggered by system sleep. If your Mac stays awake with the lid closed, such as when using an external display, this step may not run.
+- Automatic muting depends on system notifications and the audio device’s response. It cannot guarantee zero brief sounds on every device or in every situation.
+- The app does not disable the startup sound after a full shutdown. To disable it, turn off **Play sound on startup** in macOS Sound settings.

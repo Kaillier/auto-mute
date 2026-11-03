@@ -16,6 +16,9 @@ build/
 *.dmg
 *.zip
 
+# Local packaging script
+/build-dmg.sh
+
 # Local configuration
 .env
 .env.*
