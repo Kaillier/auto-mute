@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Xcode user settings and build output
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcarchive/
+*.dSYM/
+
+# Generated apps and installer images
+*.app/
+*.dmg
+*.zip
+
+# Local configuration
+.env
+.env.*
+!.env.example
