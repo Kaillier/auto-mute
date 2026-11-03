@@ -6,7 +6,7 @@ import ServiceManagement
 /// Coordinates the two safety passes: before sleep and immediately after wake.
 final class MuteController: ObservableObject {
     @Published private(set) var isMuted = false
-    @Published private(set) var outputDeviceName = "检测中…"
+    @Published private(set) var outputDeviceName = String(localized: "Detecting…")
     @Published var muteBeforeSleep: Bool {
         didSet { preferences.set(muteBeforeSleep, forKey: Keys.muteBeforeSleep) }
     }
@@ -121,11 +121,11 @@ final class MuteController: ObservableObject {
 
     private func refreshOutputDevice() {
         guard let deviceID = defaultOutputDevice() else {
-            outputDeviceName = "无可用输出设备"
+            outputDeviceName = String(localized: "No Output Device")
             return
         }
-        let name = deviceName(deviceID) ?? "默认输出设备"
-        outputDeviceName = isBuiltInSpeaker(deviceID) ? name : "\(name)（不自动静音）"
+        let name = deviceName(deviceID) ?? String(localized: "Default Output Device")
+        outputDeviceName = isBuiltInSpeaker(deviceID) ? name : String(localized: "\(name) (not automatically muted)")
         if isBuiltInSpeaker(deviceID) {
             isMuted = readMuteState(deviceID) ?? isMuted
         } else {

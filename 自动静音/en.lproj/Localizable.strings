@@ -1,0 +1,19 @@
+// Menu, settings, and audio status text.
+"Auto Mute" = "Auto Mute";
+"Mute Now" = "Mute Now";
+"Unmute" = "Unmute";
+"Mute Before Sleep" = "Mute Before Sleep";
+"Mute After Wake" = "Mute After Wake";
+"Launch at Login" = "Launch at Login";
+"Settings…" = "Settings…";
+"Quit" = "Quit";
+"The built-in speakers are muted before sleep and after wake. Unmute manually when you want sound." = "The built-in speakers are muted before sleep and after wake. Unmute manually when you want sound.";
+"Current Status" = "Current Status";
+"Output Device" = "Output Device";
+"Status" = "Status";
+"Muted" = "Muted";
+"Sound On" = "Sound On";
+"Detecting…" = "Detecting…";
+"No Output Device" = "No Output Device";
+"Default Output Device" = "Default Output Device";
+"%@ (not automatically muted)" = "%@ (not automatically muted)";

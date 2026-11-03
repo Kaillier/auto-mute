@@ -1,0 +1,19 @@
+// Menu, settings, and audio status text.
+"Auto Mute" = "自动静音";
+"Mute Now" = "立即静音";
+"Unmute" = "解除静音";
+"Mute Before Sleep" = "合盖时自动静音";
+"Mute After Wake" = "唤醒时自动静音";
+"Launch at Login" = "登录时自动运行";
+"Settings…" = "设置…";
+"Quit" = "退出";
+"The built-in speakers are muted before sleep and after wake. Unmute manually when you want sound." = "应用会在睡眠前和唤醒后静音内置扬声器。需要声音时，请手动解除静音。";
+"Current Status" = "当前状态";
+"Output Device" = "输出设备";
+"Status" = "状态";
+"Muted" = "已静音";
+"Sound On" = "有声";
+"Detecting…" = "检测中…";
+"No Output Device" = "无可用输出设备";
+"Default Output Device" = "默认输出设备";
+"%@ (not automatically muted)" = "%@（不自动静音）";

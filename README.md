@@ -14,6 +14,7 @@
 - **切回扬声器时保护**：开启“唤醒时自动静音”后，输出设备切换回内置扬声器时也会执行静音。
 - **菜单栏常驻**：通过扬声器图标快速操作，不占用 Dock 位置。
 - **登录时自动运行**：登录 Mac 后自动在后台运行。
+- **中英文界面**：自动跟随系统语言，修改系统语言后重新打开应用即可生效。
 - **按需设置**：合盖静音、唤醒静音和登录时自动运行均可单独开关。
 
 ### 安装
@@ -77,20 +78,21 @@ Auto Mute is a macOS menu bar utility that automatically mutes your Mac’s **bu
 - **Protection when switching back**: with wake muting enabled, also mutes when the output switches back to the built-in speakers.
 - **Menu bar access**: quick controls from a speaker icon, without a Dock icon.
 - **Launch at login**: runs automatically in the background after you sign in.
+- **Chinese and English**: follows your system language automatically. Quit and reopen the app after changing the system language.
 - **Separate controls**: configure sleep muting, wake muting, and launch at login independently.
 
 ### Installation
 
 1. Get the `自动静音.dmg` installer and double-click it.
-2. Drag “自动静音” to the Applications folder.
-3. Open Applications and double-click “自动静音”.
+2. Drag “Auto Mute” to the Applications folder.
+3. Open Applications and double-click “Auto Mute”.
 4. Find the speaker icon in the menu bar at the top of your screen.
 
 ### First-time Setup
 
-Click the speaker icon and check that “合盖时自动静音” (mute before sleep) and “唤醒时自动静音” (mute after wake) are enabled.
+Click the speaker icon and check that **Mute Before Sleep** and **Mute After Wake** are enabled.
 
-To start the app each time you sign in, enable “登录时自动运行” (launch at login). If macOS asks for login item approval, go to **System Settings → General → Login Items** and follow the prompt to allow “自动静音”.
+To start the app each time you sign in, enable **Launch at Login**. If macOS asks for login item approval, go to **System Settings → General → Login Items** and follow the prompt to allow “Auto Mute”.
 
 Launch at login starts the app after you sign in to your user account. During everyday lid-close sleep, an already-running app resumes its work when the Mac wakes.
 
@@ -100,24 +102,24 @@ Usually, no extra action is needed:
 
 > Close the lid for sleep → attempt to mute → reopen and wake → mute again → stay muted after unlock → manually turn sound on
 
-When you want sound, use the system volume controls or choose “解除静音” (unmute) from the menu bar. The app’s manual mute and unmute controls work only when the current output is the built-in speakers.
+When you want sound, use the system volume controls or choose **Unmute** from the menu bar. The app’s manual mute and unmute controls work only when the current output is the built-in speakers.
 
-The app currently uses Chinese interface labels:
+The interface follows your system language. When using English, the menu provides:
 
 | Menu option | What it does |
 | --- | --- |
-| 立即静音 / 解除静音 | Mute / unmute the built-in speakers manually |
-| 合盖时自动静音 | Mute before the system goes to sleep |
-| 唤醒时自动静音 | Mute after wake and when switching back to the built-in speakers |
-| 登录时自动运行 | Launch automatically after sign-in |
-| 设置… | View the current output device and status, and adjust settings |
-| 退出 | Quit the app and stop future automatic muting |
+| Mute Now / Unmute | Mute / unmute the built-in speakers manually |
+| Mute Before Sleep | Mute before the system goes to sleep |
+| Mute After Wake | Mute after wake and when switching back to the built-in speakers |
+| Launch at Login | Launch automatically after sign-in |
+| Settings… | View the current output device and status, and adjust settings |
+| Quit | Quit the app and stop future automatic muting |
 
 ### Uninstallation
 
-1. Disable “登录时自动运行” (launch at login) in the menu bar.
-2. Choose “退出” (quit).
-3. Move “自动静音” from Applications to the Trash.
+1. Disable **Launch at Login** in the menu bar.
+2. Choose **Quit**.
+3. Move “Auto Mute” from Applications to the Trash.
 
 ### Notes
 
